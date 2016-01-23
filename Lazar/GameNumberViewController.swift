@@ -10,6 +10,7 @@ import UIKit
 
 class GameNumberViewController: UIViewController {
 
+    @IBOutlet var submit: UIButton!
     @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()

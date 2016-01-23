@@ -9,7 +9,8 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
+class ViewController: CBDViewController, QRCodeReaderViewControllerDelegate {
+    
     
     lazy var reader: QRCodeReaderViewController = {
         let builder = QRCodeViewControllerBuilder { builder in

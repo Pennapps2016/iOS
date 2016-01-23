@@ -1,40 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10089" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UbM-Ng-HIN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UbM-Ng-HIN">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lazar" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yh2-51-d0P">
-                                <rect key="frame" x="285" y="285" width="30" height="30"/>
-                                <state key="normal" title="Play"/>
-                                <connections>
-                                    <action selector="scanAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ygf-Kl-Pbj"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="yh2-51-d0P" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PhJ-3j-32R"/>
-                            <constraint firstItem="yh2-51-d0P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SWz-RP-hgv"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
         <!--View Controller-->
         <scene sceneID="3Fx-w6-pvl">
             <objects>
@@ -105,7 +74,7 @@
                                 <rect key="frame" x="276" y="173" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="segueTest" id="eK7-z8-75f"/>
+                                    <segue destination="pT6-su-eQ0" kind="show" id="0yo-iA-pTO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -126,6 +95,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uCo-uK-04h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-377" y="270"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="x46-KU-EDQ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J4o-i6-u4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <glkViewController preferredFramesPerSecond="30" id="pT6-su-eQ0" customClass="ViewController" customModule="Lazar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="059-Qm-C1f"/>
+                        <viewControllerLayoutGuide type="bottom" id="fh6-yG-o0l"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="Kf9-cS-J8h">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maH-0Q-gdb">
+                                <rect key="frame" x="285" y="285" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="scanAction:" destination="pT6-su-eQ0" eventType="touchUpInside" id="xOm-Q4-8Ay"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="maH-0Q-gdb" firstAttribute="centerX" secondItem="Kf9-cS-J8h" secondAttribute="centerX" id="nlW-4G-N6x"/>
+                            <constraint firstItem="maH-0Q-gdb" firstAttribute="centerY" secondItem="Kf9-cS-J8h" secondAttribute="centerY" id="wpp-fB-c5h"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="delegate" destination="pT6-su-eQ0" id="9e9-ym-Ncu"/>
+                        </connections>
+                    </glkView>
+                </glkViewController>
+            </objects>
+            <point key="canvasLocation" x="257" y="269"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
