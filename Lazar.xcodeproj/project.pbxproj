@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FEF2692C1C5326AF004E8D08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF2692B1C5326AF004E8D08 /* AppDelegate.swift */; };
+		FEF2692E1C5326AF004E8D08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF2692D1C5326AF004E8D08 /* ViewController.swift */; };
+		FEF269311C5326AF004E8D08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF2692F1C5326AF004E8D08 /* Main.storyboard */; };
+		FEF269341C5326AF004E8D08 /* Lazar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEF269321C5326AF004E8D08 /* Lazar.xcdatamodeld */; };
+		FEF269361C5326AF004E8D08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF269351C5326AF004E8D08 /* Assets.xcassets */; };
+		FEF269391C5326AF004E8D08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF269371C5326AF004E8D08 /* LaunchScreen.storyboard */; };
+		FEF269571C5327B7004E8D08 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF269501C5327B7004E8D08 /* QRCodeReader.swift */; };
+		FEF269581C5327B7004E8D08 /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF269511C5327B7004E8D08 /* QRCodeReaderResult.swift */; };
+		FEF269591C5327B7004E8D08 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF269521C5327B7004E8D08 /* QRCodeViewController.swift */; };
+		FEF2695A1C5327B7004E8D08 /* QRCodeViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF269531C5327B7004E8D08 /* QRCodeViewControllerBuilder.swift */; };
+		FEF2695B1C5327B7004E8D08 /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF269541C5327B7004E8D08 /* ReaderOverlayView.swift */; };
+		FEF2695C1C5327B7004E8D08 /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF269551C5327B7004E8D08 /* SwitchCameraButton.swift */; };
+		FEF2695D1C5327B7004E8D08 /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF269561C5327B7004E8D08 /* ToggleTorchButton.swift */; };
+		FEF269821C53D0D4004E8D08 /* GameNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF269811C53D0D4004E8D08 /* GameNumberViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FEF269281C5326AF004E8D08 /* Lazar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lazar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF2692B1C5326AF004E8D08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FEF2692D1C5326AF004E8D08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FEF269301C5326AF004E8D08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FEF269331C5326AF004E8D08 /* Lazar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lazar.xcdatamodel; sourceTree = "<group>"; };
+		FEF269351C5326AF004E8D08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEF269381C5326AF004E8D08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEF2693A1C5326AF004E8D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEF269501C5327B7004E8D08 /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
+		FEF269511C5327B7004E8D08 /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderResult.swift; sourceTree = "<group>"; };
+		FEF269521C5327B7004E8D08 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		FEF269531C5327B7004E8D08 /* QRCodeViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewControllerBuilder.swift; sourceTree = "<group>"; };
+		FEF269541C5327B7004E8D08 /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
+		FEF269551C5327B7004E8D08 /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
+		FEF269561C5327B7004E8D08 /* ToggleTorchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleTorchButton.swift; sourceTree = "<group>"; };
+		FEF269811C53D0D4004E8D08 /* GameNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameNumberViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEF269251C5326AF004E8D08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEF2691F1C5326AF004E8D08 = {
+			isa = PBXGroup;
+			children = (
+				FEF2694F1C5327B7004E8D08 /* QRCodeReader */,
+				FEF2692A1C5326AF004E8D08 /* Lazar */,
+				FEF269291C5326AF004E8D08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEF269291C5326AF004E8D08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEF269281C5326AF004E8D08 /* Lazar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEF2692A1C5326AF004E8D08 /* Lazar */ = {
+			isa = PBXGroup;
+			children = (
+				FEF2692B1C5326AF004E8D08 /* AppDelegate.swift */,
+				FEF2692D1C5326AF004E8D08 /* ViewController.swift */,
+				FEF2692F1C5326AF004E8D08 /* Main.storyboard */,
+				FEF269351C5326AF004E8D08 /* Assets.xcassets */,
+				FEF269371C5326AF004E8D08 /* LaunchScreen.storyboard */,
+				FEF2693A1C5326AF004E8D08 /* Info.plist */,
+				FEF269321C5326AF004E8D08 /* Lazar.xcdatamodeld */,
+				FEF269811C53D0D4004E8D08 /* GameNumberViewController.swift */,
+			);
+			path = Lazar;
+			sourceTree = "<group>";
+		};
+		FEF2694F1C5327B7004E8D08 /* QRCodeReader */ = {
+			isa = PBXGroup;
+			children = (
+				FEF269501C5327B7004E8D08 /* QRCodeReader.swift */,
+				FEF269511C5327B7004E8D08 /* QRCodeReaderResult.swift */,
+				FEF269521C5327B7004E8D08 /* QRCodeViewController.swift */,
+				FEF269531C5327B7004E8D08 /* QRCodeViewControllerBuilder.swift */,
+				FEF269541C5327B7004E8D08 /* ReaderOverlayView.swift */,
+				FEF269551C5327B7004E8D08 /* SwitchCameraButton.swift */,
+				FEF269561C5327B7004E8D08 /* ToggleTorchButton.swift */,
+			);
+			path = QRCodeReader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEF269271C5326AF004E8D08 /* Lazar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEF2693D1C5326AF004E8D08 /* Build configuration list for PBXNativeTarget "Lazar" */;
+			buildPhases = (
+				FEF269241C5326AF004E8D08 /* Sources */,
+				FEF269251C5326AF004E8D08 /* Frameworks */,
+				FEF269261C5326AF004E8D08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lazar;
+			productName = Lazar;
+			productReference = FEF269281C5326AF004E8D08 /* Lazar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEF269201C5326AF004E8D08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Cyberician;
+				TargetAttributes = {
+					FEF269271C5326AF004E8D08 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4PZQBP26D3;
+					};
+				};
+			};
+			buildConfigurationList = FEF269231C5326AF004E8D08 /* Build configuration list for PBXProject "Lazar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEF2691F1C5326AF004E8D08;
+			productRefGroup = FEF269291C5326AF004E8D08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEF269271C5326AF004E8D08 /* Lazar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEF269261C5326AF004E8D08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF269391C5326AF004E8D08 /* LaunchScreen.storyboard in Resources */,
+				FEF269361C5326AF004E8D08 /* Assets.xcassets in Resources */,
+				FEF269311C5326AF004E8D08 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEF269241C5326AF004E8D08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF2695D1C5327B7004E8D08 /* ToggleTorchButton.swift in Sources */,
+				FEF2695A1C5327B7004E8D08 /* QRCodeViewControllerBuilder.swift in Sources */,
+				FEF269591C5327B7004E8D08 /* QRCodeViewController.swift in Sources */,
+				FEF2695B1C5327B7004E8D08 /* ReaderOverlayView.swift in Sources */,
+				FEF269581C5327B7004E8D08 /* QRCodeReaderResult.swift in Sources */,
+				FEF2695C1C5327B7004E8D08 /* SwitchCameraButton.swift in Sources */,
+				FEF269341C5326AF004E8D08 /* Lazar.xcdatamodeld in Sources */,
+				FEF2692E1C5326AF004E8D08 /* ViewController.swift in Sources */,
+				FEF269571C5327B7004E8D08 /* QRCodeReader.swift in Sources */,
+				FEF269821C53D0D4004E8D08 /* GameNumberViewController.swift in Sources */,
+				FEF2692C1C5326AF004E8D08 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FEF2692F1C5326AF004E8D08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEF269301C5326AF004E8D08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FEF269371C5326AF004E8D08 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEF269381C5326AF004E8D08 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEF2693B1C5326AF004E8D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEF2693C1C5326AF004E8D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEF2693E1C5326AF004E8D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Lazar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyberician.Lazar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FEF2693F1C5326AF004E8D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Lazar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyberician.Lazar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEF269231C5326AF004E8D08 /* Build configuration list for PBXProject "Lazar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF2693B1C5326AF004E8D08 /* Debug */,
+				FEF2693C1C5326AF004E8D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEF2693D1C5326AF004E8D08 /* Build configuration list for PBXNativeTarget "Lazar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF2693E1C5326AF004E8D08 /* Debug */,
+				FEF2693F1C5326AF004E8D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FEF269321C5326AF004E8D08 /* Lazar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FEF269331C5326AF004E8D08 /* Lazar.xcdatamodel */,
+			);
+			currentVersion = FEF269331C5326AF004E8D08 /* Lazar.xcdatamodel */;
+			path = Lazar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FEF269201C5326AF004E8D08 /* Project object */;
+}
