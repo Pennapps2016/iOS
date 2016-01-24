@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class CameraView : UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, AVCaptureMetadataOutputObjectsDelegate{
-    
+    var toPass: String!
     var captureSession : AVCaptureSession?
     var stillImageOutput : AVCaptureStillImageOutput?
     var previewLayer : AVCaptureVideoPreviewLayer?

@@ -9,7 +9,7 @@
 import UIKit
 
 class PlayViewController: UIViewController {
-
+var toPass: String!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,5 +33,14 @@ class PlayViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "passToCamera") {
+            let nc = segue.destinationViewController as! CameraView
+            
+            nc.toPass = self.toPass
+        }
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
 
 }

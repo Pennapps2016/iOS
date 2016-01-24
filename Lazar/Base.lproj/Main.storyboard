@@ -74,7 +74,7 @@
                                 <rect key="frame" x="276" y="173" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <segue destination="Z2h-Ah-2yF" kind="show" id="beb-Ec-gqo"/>
+                                    <segue destination="Z2h-Ah-2yF" kind="show" identifier="segueTest" id="beb-Ec-gqo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -108,27 +108,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqn-HY-aeH">
-                                <rect key="frame" x="282" y="285" width="37" height="30"/>
-                                <state key="normal" title="Don't"/>
-                                <connections>
-                                    <action selector="scanAction:" destination="Z2h-Ah-2yF" eventType="touchUpInside" id="1MC-sb-0Bb"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enP-T0-cL5">
                                 <rect key="frame" x="285" y="337" width="30" height="30"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
-                                    <segue destination="P1A-QQ-5cO" kind="show" id="oDg-5t-9NI"/>
+                                    <segue destination="P1A-QQ-5cO" kind="show" identifier="passToCamera" id="oDg-5t-9NI"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="enP-T0-cL5" firstAttribute="top" secondItem="jqn-HY-aeH" secondAttribute="bottom" constant="22" id="6y2-vw-m0o"/>
-                            <constraint firstItem="enP-T0-cL5" firstAttribute="centerX" secondItem="jqn-HY-aeH" secondAttribute="centerX" id="FLC-yK-iuz"/>
-                            <constraint firstItem="jqn-HY-aeH" firstAttribute="centerY" secondItem="2af-Gl-r60" secondAttribute="centerY" id="J8f-Lh-VjK"/>
-                            <constraint firstItem="jqn-HY-aeH" firstAttribute="centerX" secondItem="2af-Gl-r60" secondAttribute="centerX" id="hwy-DX-Tio"/>
+                            <constraint firstItem="ZLO-w8-aGT" firstAttribute="top" secondItem="enP-T0-cL5" secondAttribute="bottom" constant="233" id="NGe-5v-iD1"/>
+                            <constraint firstItem="enP-T0-cL5" firstAttribute="centerX" secondItem="2af-Gl-r60" secondAttribute="centerX" id="qGr-3d-8Kj"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -150,6 +141,14 @@
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G10-MX-QU0">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxm-0d-L9V">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <connections>
+                                            <segue destination="x3g-1X-7ta" kind="show" id="lfe-r3-pMn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
@@ -163,8 +162,30 @@
             </objects>
             <point key="canvasLocation" x="905" y="270"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="h4c-Km-Kpa">
+            <objects>
+                <viewController id="x3g-1X-7ta" customClass="ViewController" customModule="Lazar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ctd-zK-72D"/>
+                        <viewControllerLayoutGuide type="bottom" id="O0T-Ll-9j0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JsL-cg-6S5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="P1A-QQ-5cO" kind="show" identifier="backToCamera" id="ONz-Q4-T2G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P01-gb-v8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1549" y="269"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="oDg-5t-9NI"/>
         <segue reference="k1D-6l-QFk"/>
     </inferredMetricsTieBreakers>
 </document>

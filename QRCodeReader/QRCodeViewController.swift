@@ -278,6 +278,9 @@ public class QRCodeReaderViewController: UIViewController {
   func toggleTorchAction(button: ToggleTorchButton) {
     codeReader.toggleTorch()
   }
+    public override func viewDidLoad() {
+        view.hidden = true
+    }
 }
 
 /**

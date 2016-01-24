@@ -32,15 +32,25 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
                     print("\(self.toPass)")
                     print("\(health)")
                     //let url = NSURL(string: "http://shootat.me/api/\(self.toPass!)/\(result.value)/\(health!)")
+                    if self.toPass == nil {
+                        self.toPass = "8";
+                    }
                     let url = NSURL(string: "http://shootat.me/api/\(self.toPass!)/\(result.value)/\(health!)")
                     
                     let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
                         print(NSString(data: data!, encoding: NSUTF8StringEncoding))
+                        //self.performSegueWithIdentifier("backToCamera", sender: self)
+                        self.presentViewController(CameraView(), animated: true, completion: nil)
+                        
                     }
-                    task.resume()
+                    //task.resume()
+                    //view.hidden = true
                 }
             }
-            presentViewController(reader, animated: true, completion: nil)
+            self.presentViewController(reader, animated: true, completion: nil)
+            
+            
+            
         }
         else {
             let alert = UIAlertController(title: "Error", message: "Reader not supported by the current device", preferredStyle: .Alert)
@@ -49,7 +59,9 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
             presentViewController(alert, animated: true, completion: nil)
         }
     }
-    
+    override func viewDidAppear(animated: Bool) {
+        scanAction(self)
+    }
     // MARK: - QRCodeReader Delegate Methods
     
     func reader(reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
@@ -63,6 +75,9 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
             
             self?.presentViewController(alert, animated: true, completion: nil)
             })
+    }
+    override func viewDidLoad() {
+        view.hidden = true
     }
     
     func readerDidCancel(reader: QRCodeReaderViewController) {

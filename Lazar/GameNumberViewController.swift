@@ -29,7 +29,7 @@ class GameNumberViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
             if (segue.identifier == "segueTest") {
-                let svc = segue.destinationViewController as! ViewController;
+                let svc = segue.destinationViewController as! PlayViewController;
                 
                 svc.toPass = textField.text
                 
