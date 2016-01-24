@@ -43,7 +43,7 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
                         self.presentViewController(CameraView(), animated: true, completion: nil)
                         
                     }
-                    //task.resume()
+                    task.resume()
                     //view.hidden = true
                 }
             }
