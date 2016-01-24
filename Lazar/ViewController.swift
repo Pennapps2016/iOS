@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: CBDViewController, QRCodeReaderViewControllerDelegate {
+class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     
     
     lazy var reader: QRCodeReaderViewController = {
@@ -21,7 +21,7 @@ class ViewController: CBDViewController, QRCodeReaderViewControllerDelegate {
         return QRCodeReaderViewController(builder: builder)
     }()
     var toPass: String!
-    @IBAction func scanAction(sender: AnyObject) {
+     func scanAction(sender: AnyObject) {
         if QRCodeReader.supportsMetadataObjectTypes() {
             reader.modalPresentationStyle = .FormSheet
             reader.delegate               = self

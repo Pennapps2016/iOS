@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UbM-Ng-HIN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10089" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UbM-Ng-HIN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -74,7 +74,7 @@
                                 <rect key="frame" x="276" y="173" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <segue destination="pT6-su-eQ0" kind="show" id="0yo-iA-pTO"/>
+                                    <segue destination="Z2h-Ah-2yF" kind="show" id="beb-Ec-gqo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -96,38 +96,72 @@
             </objects>
             <point key="canvasLocation" x="-377" y="270"/>
         </scene>
-        <!--GLKit View Controller-->
-        <scene sceneID="x46-KU-EDQ">
+        <!--Play View Controller-->
+        <scene sceneID="9Rl-D8-0cE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="J4o-i6-u4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <glkViewController preferredFramesPerSecond="30" id="pT6-su-eQ0" customClass="ViewController" customModule="Lazar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Z2h-Ah-2yF" customClass="PlayViewController" customModule="Lazar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="059-Qm-C1f"/>
-                        <viewControllerLayoutGuide type="bottom" id="fh6-yG-o0l"/>
+                        <viewControllerLayoutGuide type="top" id="QOE-0E-qDS"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZLO-w8-aGT"/>
                     </layoutGuides>
-                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="Kf9-cS-J8h">
+                    <view key="view" contentMode="scaleToFill" id="2af-Gl-r60">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maH-0Q-gdb">
-                                <rect key="frame" x="285" y="285" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqn-HY-aeH">
+                                <rect key="frame" x="282" y="285" width="37" height="30"/>
+                                <state key="normal" title="Don't"/>
+                                <connections>
+                                    <action selector="scanAction:" destination="Z2h-Ah-2yF" eventType="touchUpInside" id="1MC-sb-0Bb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enP-T0-cL5">
+                                <rect key="frame" x="285" y="337" width="30" height="30"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
-                                    <action selector="scanAction:" destination="pT6-su-eQ0" eventType="touchUpInside" id="xOm-Q4-8Ay"/>
+                                    <segue destination="P1A-QQ-5cO" kind="show" id="oDg-5t-9NI"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="maH-0Q-gdb" firstAttribute="centerX" secondItem="Kf9-cS-J8h" secondAttribute="centerX" id="nlW-4G-N6x"/>
-                            <constraint firstItem="maH-0Q-gdb" firstAttribute="centerY" secondItem="Kf9-cS-J8h" secondAttribute="centerY" id="wpp-fB-c5h"/>
+                            <constraint firstItem="enP-T0-cL5" firstAttribute="top" secondItem="jqn-HY-aeH" secondAttribute="bottom" constant="22" id="6y2-vw-m0o"/>
+                            <constraint firstItem="enP-T0-cL5" firstAttribute="centerX" secondItem="jqn-HY-aeH" secondAttribute="centerX" id="FLC-yK-iuz"/>
+                            <constraint firstItem="jqn-HY-aeH" firstAttribute="centerY" secondItem="2af-Gl-r60" secondAttribute="centerY" id="J8f-Lh-VjK"/>
+                            <constraint firstItem="jqn-HY-aeH" firstAttribute="centerX" secondItem="2af-Gl-r60" secondAttribute="centerX" id="hwy-DX-Tio"/>
                         </constraints>
-                        <connections>
-                            <outlet property="delegate" destination="pT6-su-eQ0" id="9e9-ym-Ncu"/>
-                        </connections>
-                    </glkView>
-                </glkViewController>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LTl-yy-esl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="257" y="269"/>
+            <point key="canvasLocation" x="283" y="270"/>
+        </scene>
+        <!--Camera View-->
+        <scene sceneID="2eD-T1-lmk">
+            <objects>
+                <viewController id="P1A-QQ-5cO" customClass="CameraView" customModule="Lazar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RvU-4t-cC6"/>
+                        <viewControllerLayoutGuide type="bottom" id="yH2-JT-efg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JdP-Jb-NuM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G10-MX-QU0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="G10-MX-QU0" id="HFh-Zs-dmL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="07y-1X-m6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905" y="270"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
